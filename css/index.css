@@ -1,0 +1,151 @@
+@import "./reset.css";
+@import "./fonts.css";
+header{
+   display:grid;
+   grid-template-columns: auto;
+   justify-content: center;
+   background:url("../img/header__logo.png") no-repeat center;
+   background-size: cover;
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   /* border: 2px solid red; */
+}
+/*Navigation section*/
+nav{
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space-between;
+   position: relative;
+   /* border: 2px solid blue; */
+   width: 100vw;
+   height: 100px;
+}
+
+#header_logo{
+   width:186px;
+   height: 58px;
+   position: absolute;
+   left: 14px;
+   top: 9px;
+}
+
+.burger{
+   position: absolute;
+   right: 6.5px;
+   top: 35px;
+}
+nav div#header__menu{
+   position: fixed;
+   right: 0;
+   top: 0;
+   width: 0;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   background-color: rgba(0,0,0,0.7);
+   transition: width 0.5s;
+   z-index: 1;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+nav div#header__menu ul{
+   text-align: center;
+   padding: 0;
+}
+nav div#header__menu li{
+   padding: 16px 24px;
+}
+nav div#header__menu a{
+   height: 28px;
+font-family: 'Graphik';
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+text-decoration: none;
+font-size: 30px;
+transition: 0.5s;
+}
+nav div#header__menu li::first-letter{
+   text-transform: capitalize;
+}
+nav .header__menu_socialMedia{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+/*Title of the Header**/
+
+header section.header__title{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   margin: auto;
+   position: absolute;
+   top: 160px;
+   height: 393px;
+   /* border: 2px solid red; */
+}
+
+.header__title > div h2{
+font-family: 'Graphik';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+width: 333px;
+/* border: 2px solid red; */
+}
+
+.header__title > div h4{
+width: 265px;
+height: 80px;
+font-family: 'Graphik';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+}
+
+.header__title > div button {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 0px;
+width: 236px;
+height: 52px;
+background: #2091F9;
+border-radius: 35px;
+
+font-family: 'Graphik';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+}
+
+@media only screen and (min-width:768px) {
+   header{
+      background:url("../img/header_logo_PC.png") no-repeat center;
+      background-size: cover;
+
+   }
+}
