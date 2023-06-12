@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("header__menu").style.width = "110vw";
+    document.getElementById("header__menu").style.width = "100vw";
 
 }
 function closeNav(){

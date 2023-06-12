@@ -1,43 +1,42 @@
 header {
     display: grid;
     grid-template-columns: auto;
-    justify-content: center;
+    justify-content:center;
     background: url("../img/header__logo.png") no-repeat center;
     background-size: cover;
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* border: 2px solid red; */
+    height: 847px;
+    width: 100%;
+    overflow: hidden;
 }
 /*Navigation section*/
 nav {
     display: flex;
-    flex-flow: wrap row;
     justify-content: space-between;
     position: relative;
-    /* border: 2px solid blue; */
     width: 100vw;
     height: 100px;
+    z-index: 2;
 }
-
 #header_logo {
     width: 186px;
     height: 58px;
     position: absolute;
-    left: 14px;
+    left: 20px;
     top: 9px;
 }
 
 .burger {
     position: absolute;
-    right: 6.5px;
+    right: 4px;
     top: 35px;
 }
-nav div#header__menu {
+
+nav div#header__menu{
     position: fixed;
     right: 0;
     top: 0;
-    width: 0;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -51,10 +50,6 @@ nav div#header__menu {
     justify-content: center;
     align-items: center;
 }
-nav div#header__menu ul {
-    text-align: center;
-    padding: 0;
-}
 nav div#header__menu  .closebtn {
     position: absolute;
     top: 30px;
@@ -64,11 +59,12 @@ nav div#header__menu  .closebtn {
     border: 0px;
     color: #ffffff;
 }
-nav div#header__menu li {
+nav div#header__menu ul li {
     padding: 16px 24px;
     list-style-type: none;
+    text-align: center;
 }
-nav div#header__menu a {
+nav div#header__menu ul li a {
     height: 28px;
     font-family: "Graphik";
     font-style: normal;
@@ -84,25 +80,24 @@ nav div#header__menu a {
 nav div#header__menu li::first-letter {
     text-transform: capitalize;
 }
-nav .header__menu_socialMedia {
+nav div#header__menu .header__menu-icons{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+}
+
+nav .header__menu-social-Media{
+    display: none;
 }
 
 /*Title of the Header**/
 
-header section.header__title {
+header .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    top: 160px;
-    height: 393px;
-    /* border: 2px solid red; */
+    justify-content: flex-end;
+    position: relative;
+    bottom: 280px;
+    z-index: 1;
 }
 
 .header__title > div h2 {
@@ -112,13 +107,13 @@ header section.header__title {
     font-size: 48px;
     line-height: 55px;
     text-align: center;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
     color: #ffffff;
     width: 333px;
-    /* border: 2px solid red; */
+    text-align: center;
 }
 
-.header__title > div h4 {
+.header__title > div p {
     width: 265px;
     height: 80px;
     font-family: "Graphik";
@@ -130,17 +125,21 @@ header section.header__title {
     letter-spacing: 0.2px;
     color: #ffffff;
 }
+.header__title > div p span {
+    display: none;
+}
 
-.header__title > div button {
+.header__title > div button{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.header__title > div button p{
     padding: 16px 0px;
     width: 236px;
     height: 52px;
     background: #2091f9;
     border-radius: 35px;
-
     font-family: "Graphik";
     font-style: normal;
     font-weight: 400;
@@ -149,19 +148,133 @@ header section.header__title {
     letter-spacing: 0.2px;
     color: #ffffff;
 }
+.header__title > div button span{    
+    display: none;
+}
+
+
+.header__title > :nth-child(1) {
+    margin-bottom: 27px;
+}
+.header__title > :nth-child(2) {
+    margin-bottom: 69px;
+}
+
+@media(min-width: 768px) and (max-width: 868px) {
+    nav .header__menu-social-Media{
+        display: none;
+    }
+    nav #header_logo {
+        position: relative;
+        left: 50px;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     header {
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
         background: url("../img/header_logo_PC.png") no-repeat center;
         background-size: cover;
-    }
+   }
     header > nav, section{
-        max-width: 1127px;
-        border: 2px solid red;
+        max-width: 1200px;
+    }
+    
+    nav{
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+
+    nav div#header__menu {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    z-index: 1;
+    }
+    
+    nav div#header__menu .header__menu-links{
+        display: flex;
+    }
+    nav div#header__menu  .closebtn {
+        display: none;
+    }
+
+    nav div#header__menu ul li a {
+        font-size: 15px;
+    }
+
+
+    nav div#header__menu .header__menu-icons{
+        display: none;
+    }
+    #header_logo {
+        position: relative;
+        left: 20px;
+    }
+    
+    #openNav{
+        display: none;
     }
 
     header section.header__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 280px;
+        z-index: 1;
+    }
+    .header__title > div h2 {
+        font-family: "Graphik";
+        font-weight: 700;
+        font-size: 74px;
+        line-height: 84px;
+        letter-spacing: 0.2px;
+        width: 672px;
+    }
+    
+    .header__title > div p {
+        width: 766px;
+    }
+    .header__title > div p span {
+        display: inline;
+    }
+    
+    .header__title > div button p {    
+        font-family: "Graphik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+    }
+    .header__title > div button span{    
+        display: inline;
+    }
+    
+}
+
+@media (min-width: 868px) {
+    nav .header__menu-social-Media{
+        display: block;
+        position: absolute;
+        right: 50px;
+    }
+
+    nav .header__menu-social-Media ul{
+        width: 165px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
