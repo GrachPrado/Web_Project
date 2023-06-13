@@ -1,4 +1,6 @@
-function openNav() {
+document.addEventListener('DOMContentLoaded', () => {
+
+  function openNav() {
     document.getElementById("header__menu").style.width = "100vw";
 
 }
@@ -6,5 +8,10 @@ function closeNav(){
   document.getElementById("header__menu").style.width = "0";
 }
 
-document.getElementById("closeMenu").addEventListener("click", closeNav);
-document.getElementById("openNav").addEventListener("click", openNav);
+  const close = document.getElementById("closeMenu");
+  console.log(close);
+close.addEventListener("click", closeNav);
+const open = document.getElementById("openNav");
+console.log(open);
+open.addEventListener("click", openNav);
+});
