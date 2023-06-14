@@ -105,32 +105,26 @@ header .header__title {
 	position: relative;
 	bottom: 280px;
 	z-index: 1;
-}
-
-.header__title>div h2 {
 	font-family: "Graphik";
 	font-style: normal;
 	font-weight: 400;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.header__title>div h2 {
 	font-size: 48px;
 	line-height: 55px;
-	text-align: center;
-	letter-spacing: 0.1px;
-	color: #ffffff;
+	letter-spacing: 0.2px;
 	width: 333px;
-	text-align: center;
 }
 
 .header__title>div p {
 	width: 265px;
 	height: 80px;
-	font-family: "Graphik";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 28px;
 	line-height: 40px;
-	text-align: center;
-	letter-spacing: 0.2px;
-	color: #ffffff;
 }
 
 .header__title>div p span {
@@ -149,13 +143,8 @@ header .header__title {
 	height: 52px;
 	background: #2091f9;
 	border-radius: 35px;
-	font-family: "Graphik";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 20px;
 	line-height: 20px;
-	letter-spacing: 0.2px;
-	color: #ffffff;
 }
 
 .header__title>div button span {
@@ -184,9 +173,6 @@ header .header__title {
 
 @media only screen and (min-width: 768px) {
 	header {
-		display: grid;
-		grid-template-columns: auto;
-		justify-content: center;
 		background: url("../img/header_logo_PC.png") no-repeat center;
 		background-size: cover;
 	}
@@ -199,7 +185,6 @@ header .header__title {
 	nav {
 		justify-content: flex-start;
 		align-items: center;
-		position: relative;
 	}
 
 	nav div#header__menu {
@@ -208,8 +193,6 @@ header .header__title {
 		width: 500px;
 		height: 100px;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		background-color: transparent;
 		z-index: 1;
 	}
@@ -239,23 +222,10 @@ header .header__title {
 	#openNav {
 		display: none;
 	}
-
-	header section.header__title {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-end;
-		position: relative;
-		bottom: 280px;
-		z-index: 1;
-	}
-
 	.header__title>div h2 {
-		font-family: "Graphik";
 		font-weight: 700;
 		font-size: 74px;
 		line-height: 84px;
-		letter-spacing: 0.2px;
 		width: 672px;
 	}
 
@@ -264,17 +234,12 @@ header .header__title {
 	}
 
 	.header__title>div p span {
-		display: inline;
+		display: inline-block;
 	}
 
 	.header__title>div button {
-		font-family: "Graphik";
-		font-style: normal;
-		font-weight: 400;
 		font-size: 20px;
 		line-height: 20px;
-		letter-spacing: 0.2px;
-		color: #ffffff;
 	}
 
 	.header__title>div button span {
