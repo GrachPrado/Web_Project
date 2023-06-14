@@ -135,9 +135,6 @@ header .header__title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.header__title>div button {
 	padding: 16px 0px;
 	width: 236px;
 	height: 52px;
