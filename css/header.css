@@ -43,7 +43,7 @@ nav div#header__menu {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.9);
 	transition: width 0.5s;
 	z-index: 1;
 	overflow-x: hidden;
