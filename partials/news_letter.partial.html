@@ -1,22 +1,26 @@
 <!--NewsLetter-->
 
-<section>
-    <div>
+<section class="news">
+    <div class="news__title">
         <h2>At your fingertips</h2>
         <h4>Newsletter</h4>
+        <h4>Lightning fast prototyping</h4>
         <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
     </div>
 
-    <div>
+    <div class="news__letter">
         <img src="./img/envelope.png" alt="envelope" />
     </div>
-    <div>
-        <form>
-            <h6>Subscribe to our Newsletter</h6>
+    <!--FORM-->
+    <div class="news__subscription">
+        <div class="news__subscription-title">
+        <h6>Subscribe to our Newsletter</h6>
             <p>Available exclusivery on Figmaland</p>
+            </div>
+        <form class="news__subscription-form">
             <label for="email">
-                <input type="email" name="email" id="email" placeholder="Your email" />
-            </label>
+                <input type="email" name="email" id="email" placeholder="Your Email" />
+            </label><br>
             <input type="submit" value="Subscribe" />
         </form>
     </div>

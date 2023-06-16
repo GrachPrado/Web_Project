@@ -67,7 +67,7 @@
 }
 
 .way__title-images img {
-	width: calc(150px + (190 - 150) * ((100vw - 768px) / (768 - 320)));
+	height: calc(150px + (190 - 150) * ((100vw - 768px) / (768 - 320)));
 	width: calc(300px + (350 - 300) * ((100vw - 768px) / (768 - 320)));
 }
 
