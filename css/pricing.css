@@ -54,7 +54,7 @@
 .price__cards > div:last-child{
     margin-bottom: 118px;
 }
-
+/*Price title*/
 .price__cards-title {
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@
     color: #374754;
 }
 
-
+/*Price payment*/
 .price__cards-payment {
     display: grid;
     grid-template-columns: auto auto;
@@ -116,7 +116,7 @@
     text-align: left;
     padding-left: 10px;
 }
-
+/*Price list*/
 .price__cards-list{
     display: flex;
     flex-direction: column;
@@ -137,7 +137,7 @@
 .price__cards-list ul li:last-child{
     margin-bottom: 40px;
 }
-
+/*price button*/
 .price__cards-orderButton button{ 
     display: flex;
     flex-direction: column;
@@ -159,6 +159,29 @@
     letter-spacing: 0.2px;
     color: #FFFFFF;
 }
+
+/**/
+
+.price__cards > div:hover{
+    background-color: #2091F9;
+    transition: 0.5s;
+}
+.price__cards > div:hover h6{
+    color: #FFFFFF;
+}
+.price__cards > div:hover p{
+    color: #FFFFFF;
+}
+.price__cards > div:hover li{
+    color:#FFFFFF; 
+}
+.price__cards > div:hover .price__cards-orderButton button{ 
+    background: #FFFFFF;
+}
+.price__cards > div:hover .price__cards-orderButton button span{
+    color: #2091F9;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -187,5 +210,28 @@
     .price__cards > div:last-child{
         margin-bottom: 143px;
     }
+    /*hover css*/
+.price__cards > div:hover{
+    background-color: #2091F9;
+    transition: 0.5s;
+}
+.price__cards > div:hover{
+    height: 693px;
+}
+.price__cards > div:hover h6{
+    color: #FFFFFF;
+}
+.price__cards > div:hover p{
+    color: #FFFFFF;
+}
+.price__cards > div:hover li{
+    color:#FFFFFF; 
+}
+.price__cards > div:hover .price__cards-orderButton button{ 
+    background: #FFFFFF;
+}
+.price__cards > div:hover .price__cards-orderButton button span{
+    color: #2091F9;
+}
 
 }

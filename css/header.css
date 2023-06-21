@@ -70,7 +70,7 @@ nav div#header__menu .closebtn {
 }
 
 nav div#header__menu ul li {
-	padding: 16px 24px;
+	padding: 16px 24px 24px;
 	list-style-type: none;
 	text-align: center;
 }
@@ -94,6 +94,7 @@ nav div#header__menu li::first-letter {
 
 nav div#header__menu .header__menu-icons {
 	display: flex;
+	margin-top: 50px;
 }
 
 nav .header__menu-social-Media {
