@@ -5,9 +5,9 @@
 	margin: auto;
     font-family: 'Graphik';
     font-style: normal;
+    font-weight: 400;
 }
 .partners .partners__title{
-    font-weight: 400;
     text-align: center;
     letter-spacing: 0.2px;
     margin-bottom: 108px;

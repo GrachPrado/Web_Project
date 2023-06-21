@@ -6,6 +6,7 @@
     margin: 171px auto auto;
     font-family: 'Graphik';
     font-style: normal;
+    font-weight: 400;
 }
 
 .testimonials__title{
@@ -17,7 +18,6 @@
 .testimonials__title h2 {
 width: 281px;
 height: 55px;
-font-weight: 400;
 font-size: 48px;
 line-height: 55px;
 text-align: center;
@@ -59,7 +59,7 @@ color: #252B42;
 .testimonials__foto p {
     width: 75px;
     height: 16px;
-    font-family: 'Roboto';
+    font-family:"Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 10.1442px;

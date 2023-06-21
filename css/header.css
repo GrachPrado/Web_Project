@@ -8,6 +8,12 @@ header {
 	height: 847px;
 	width: 100%;
 	overflow: hidden;
+	font-family: "Graphik";
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
 }
 
 /*Navigation section*/
@@ -68,16 +74,15 @@ nav div#header__menu ul li {
 	list-style-type: none;
 	text-align: center;
 }
-
 nav div#header__menu ul li a {
 	height: 28px;
 	font-family: "Graphik";
 	font-style: normal;
 	font-weight: 400;
-	line-height: 28px;
 	text-align: center;
 	letter-spacing: 0.2px;
 	color: #ffffff;
+	line-height: 28px;
 	text-decoration: none;
 	font-size: 30px;
 	transition: 0.5s;
@@ -96,6 +101,7 @@ nav .header__menu-social-Media {
 }
 
 /*Title of the Header**/
+/*1*/
 
 header .header__title {
 	display: flex;
@@ -105,12 +111,6 @@ header .header__title {
 	position: relative;
 	bottom: 280px;
 	z-index: 1;
-	font-family: "Graphik";
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 0.2px;
-	text-align: center;
-	color: #ffffff;
 }
 
 .header__title>div h2 {
@@ -240,7 +240,7 @@ header .header__title {
 	}
 
 	.header__title>div button span {
-		display: inline;
+		display: inline-block;
 	}
 
 }
