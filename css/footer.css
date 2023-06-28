@@ -76,11 +76,32 @@ footer {
 }
 
 @media screen and (min-width:768px) {
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__links .capitalized{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        text-transform: capitalize;
+    }
+    .footer__links ul li a{
+        color: #FFF;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+    }
     .footer__lists{
         flex-direction: row;
         justify-content: space-around;
         width: 80vw;
     }
+    .footer__lists > div:nth-child(1){
+        display: none;
+    }
+    
     .footer__bottom{
         display: flex;
         flex-direction: column;
@@ -96,6 +117,10 @@ footer {
         margin: 150px auto 0;
         padding: 150px 0 0;
         grid-template-columns: auto auto;
+    }
+    .footer__links .capitalized{
+            position: absolute;
+            left: 0;
     }
 
     .footer__lists{
