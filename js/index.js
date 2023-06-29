@@ -1,3 +1,4 @@
-document.addEventListener('partialsLoaded', () => {
-    import('./navigation.js');
-});
+document.addEventListener("partialsLoaded", () => {
+    import("./navigation.js");
+  });
+  

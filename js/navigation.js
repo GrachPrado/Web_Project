@@ -1,11 +1,9 @@
-
 function openNav() {
-    document.querySelector("#header__menu").style.width = "100vw";
-
+  document.querySelector("#header__menu").style.width = "100vw";
 }
-function closeNav(){
+function closeNav() {
   document.querySelector("#header__menu").style.width = "0";
 }
 
-  document.querySelector("#closeMenu").addEventListener("click", closeNav);
-  document.querySelector("#openNav").addEventListener("click", openNav);
+document.querySelector("#closeMenu").addEventListener("click", closeNav);
+document.querySelector("#openNav").addEventListener("click", openNav);

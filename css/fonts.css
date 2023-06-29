@@ -3,25 +3,26 @@
     src: url(../fonts/Graphik/GraphikLight.otf);
     font-weight: 400;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "Graphik";
     src: url(../fonts/Graphik/GraphikBold.otf);
     font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Black.ttf");
     font-weight: 400;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Bold.ttf");
     font-weight: 700;
     font-style: normal;
-}
+  }
+  
