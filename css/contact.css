@@ -258,10 +258,12 @@
     .contact__map iframe{
         display: inline-block;
         margin-left: 80px;
+        width: 516px;
+        height: 325px;
     }
     .contact__form{
         grid-area:  2 / 1 / 5 / 2;
         width: 453px;
         height: 670px;
-    } */
+    }
 }
