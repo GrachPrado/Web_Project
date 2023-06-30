@@ -49,7 +49,27 @@
 	width: 95vw;
 	margin: 70px auto auto;
 	background: url("../img/screen__small.png") no-repeat center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
   }
+  .features__video-image{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .features__video-background-player{
+	  position: absolute;
+  }
+  .features__video-image img{
+	max-width: 100px;
+    max-height: 100px;
+}
+.features__video-image img:nth-child(2){
+	max-width: 27px;
+	max-height: 27px;
+}
   
   .features__cards {
 	display: grid;
@@ -141,9 +161,6 @@
 	#features .features__video {
 	  grid-area: 4 / 1 / 5 / 4;
 	  border-radius: 45px;
-	}
-  
-	#features .features__video {
 	  height: 658px;
 	  width: 96vw;
 	  margin: auto;
