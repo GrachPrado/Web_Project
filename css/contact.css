@@ -142,6 +142,7 @@
     font-weight: 400;
     color: #18171d;
     margin-bottom: 45px;
+    resize:none;
   }
   
   .contact__form input[type="submit"] {
