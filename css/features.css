@@ -66,6 +66,9 @@
 	max-width: 100px;
     max-height: 100px;
 }
+.features__video-image:hover{
+		cursor: pointer;
+}
 .features__video-image img:nth-child(2){
 	max-width: 27px;
 	max-height: 27px;
